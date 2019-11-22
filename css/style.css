@@ -1,0 +1,104 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial Narrow';
+  font-size: 18px;
+  color: white;
+}
+
+@font-face {
+    font-family: 'Times NR Condensed';
+    src: url('../font/TimesNRCondensed.woff2') format('woff2'),
+        url('../font/TimesNRCondensed.woff') format('woff'),
+        url('../font/TimesNRCondensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+  font-family: 'Times NR Condensed', serif;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+h1 {
+  color: #ff8f1f;
+}
+
+h2, h3 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #ff8f1f;
+  -webkit-transition: .2s ease-in-out;
+    -moz-transition-duration:0.2s;
+    -webkit-transition-duration:0.2s;
+    -o-transition-duration:0.2s;
+}
+
+a:hover {
+  color: white;
+  -webkit-transition: .2s ease-in-out;
+    -moz-transition-duration:0.2s;
+    -webkit-transition-duration:0.2s;
+    -o-transition-duration:0.2s;
+}
+
+.bg1, .bg2, .bg3 {
+  position: relative;
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg1 {
+  background-image: url("../img/bg1.jpg");
+}
+
+.bg2 {
+  background-image: url("../img/bg2.png");
+}
+
+.bg3 {
+  background-image: url("../img/bg3.png");
+}
+
+.caption {
+  position: absolute;
+  width: 50%;
+  top: 40%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  color: #000;
+}
+
+.border {
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 4px double #ff8f1f;
+}
+
+.description {
+  color: #fff;
+  background-color: #111;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
