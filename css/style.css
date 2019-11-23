@@ -6,7 +6,7 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: 'Arial Narrow';
-  font-size: 18px;
+  font-size: 16px;
   color: white;
 }
 
@@ -19,11 +19,11 @@ body, html {
     font-style: normal;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Times NR Condensed', serif;
-  transform: scale(.95, 1);
   text-transform: uppercase;
   font-size: 40px;
+  font-weight: normal;
 }
 
 h1 {
@@ -32,6 +32,13 @@ h1 {
 
 h2, h3 {
   color: white;
+}
+
+h3 {
+  font-family: 'Arial Narrow';
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 25px;
 }
 
 a {
@@ -54,11 +61,22 @@ a:hover {
 .bg1, .bg2, .bg3 {
   position: relative;
   min-height: 100%;
-  opacity: .7;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.bgShade {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: inherit;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .bg1 {
@@ -88,10 +106,51 @@ a:hover {
 .border {
   background-color: #111;
   color: #fff;
-  padding: 10px;
+  padding: 20px;
   font-size: 20px;
   text-transform: uppercase;
   border: 4px double #ff8f1f;
+}
+
+.staff {
+  display: inline;
+  position: absolute;
+  width: 60%;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  color: #000;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.staffM {
+  display: inline-grid;
+  white-space: normal;
+  top: 0;
+  left: 0;
+  margin: 15px;
+  padding: 10px;
+  width: 200px;
+  height: 400px;
+  background-color: #111;
+  color: white;
+  border: 4px double #ff8f1f;
+  text-align: center;
+}
+
+.staffM img {
+  display: block;
+  width: 100px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 5px;
 }
 
 .description {
