@@ -115,7 +115,7 @@ a:hover {
 .staff {
   display: inline;
   position: absolute;
-  width: 60%;
+  width: 100%;
   top: 20%;
   left: 0;
   right: 0;
@@ -134,12 +134,25 @@ a:hover {
   left: 0;
   margin: 15px;
   padding: 10px;
-  width: 200px;
-  height: 400px;
+  width: 15em;
+  height: 25em;
   background-color: #111;
   color: white;
   border: 4px double #ff8f1f;
   text-align: center;
+  overflow-y: hidden;
+}
+
+.staffM h2 {
+  margin: auto;
+}
+
+.staffM h3 {
+  margin: auto;
+}
+
+.staffM p {
+  margin: auto;
 }
 
 .staffM img {
