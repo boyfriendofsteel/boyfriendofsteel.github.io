@@ -19,6 +19,17 @@ body, html {
     font-style: normal;
 }
 
+::-webkit-scrollbar-thumb{
+background: #ff8f1f;
+height:auto;
+}
+
+::-webkit-scrollbar {
+height:auto;
+width:3px;
+background: black;
+}
+
 ::selection {
   background: #ff8f1f;
 }
