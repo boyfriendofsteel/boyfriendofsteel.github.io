@@ -19,6 +19,14 @@ body, html {
     font-style: normal;
 }
 
+::selection {
+  background: #ff8f1f;
+}
+
+::-moz-selection {
+  background: #ff8f1f;
+}
+
 h1, h2 {
   font-family: 'Times NR Condensed', serif;
   text-transform: uppercase;
@@ -89,6 +97,21 @@ a:hover {
 
 .bg3 {
   background-image: url("../img/bg3.png");
+}
+
+#topMenu {
+  width: 100%;
+  height: auto;
+  white-space: normal;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  background: #111;
+  z-index: 3;
+  font-family: 'Times NR Condensed', serif;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .caption {
@@ -179,6 +202,22 @@ a:hover {
   height: auto;
   display: inline-block;
   margin: 5px;
+}
+
+.socials a {
+  opacity: 1;
+  -webkit-transition: .2s ease-in-out;
+    -moz-transition-duration:0.2s;
+    -webkit-transition-duration:0.2s;
+    -o-transition-duration:0.2s;
+}
+
+.socials a:hover {
+  opacity: 0.4;
+  -webkit-transition: .2s ease-in-out;
+    -moz-transition-duration:0.2s;
+    -webkit-transition-duration:0.2s;
+    -o-transition-duration:0.2s;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
