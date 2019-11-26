@@ -5,9 +5,16 @@ html {
 body, html {
   height: 100%;
   margin: 0;
-  font-family: 'Arial Narrow';
+  font-family: 'Arial Narrow', Arial, sans-serif;
   font-size: 16px;
   color: white;
+}
+
+footer {
+  background-color: #111;
+  padding: 10px;
+  font-size: 11px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 @font-face {
@@ -27,6 +34,7 @@ height:auto;
 ::-webkit-scrollbar {
 height:auto;
 width:3px;
+height: 3px;
 background: black;
 }
 
@@ -54,7 +62,7 @@ h2, h3 {
 }
 
 h3 {
-  font-family: 'Arial Narrow';
+  font-family: 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 25px;
@@ -149,7 +157,7 @@ a:hover {
 .staff {
   display: inline;
   position: absolute;
-  width: 100%;
+  width: 90%;
   top: 20%;
   left: 0;
   right: 0;
